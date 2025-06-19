@@ -1,0 +1,81 @@
+:root {
+    --vidbox-color: rgba(0, 0, 0, 0);
+    --bg-blue: rgb(222, 236, 255);
+    --bg-blue-bright: rgb(244, 258, 277);
+    --bg-white: white;
+    --text-color: #2d2e33;
+    --wave-color-light: white;
+    --wave-color-blue: rgb(222, 236, 255);
+    --img-outline-color: #2d2e33;
+    --contact-form-outline: #7e98be;
+    --input-outline: rgba(0, 0, 0, 0.1);
+    --input-outline-focus: #7bd4b1;
+    --blog-text-color: rgb(92, 116, 151);
+    --price-box-color: #ececec;
+    --header-color: rgba(0, 0, 0, 0.15);
+    --blog-box-color: white;
+    --blog-box-outline: #ececec;
+    --blog-title-color: #272727;
+}
+
+/* SVG wave shape styles */
+
+.top-wave-index {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-wave-index svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 135px;
+}
+
+.top-wave-index .shape-fill {
+    fill: white;
+}
+
+.top-wave {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.top-wave svg {
+    position: relative;
+    display: block;
+    width: calc(117% + 1.3px);
+    height: 135px;
+}
+
+.top-wave .shape-fill {
+    fill: var(--bg-blue);
+}
+
+.bottom-wave {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+    transform: rotateY(180deg);
+}
+
+.bottom-wave .shape-fill {
+    fill: var(--wave-color-blue);
+}

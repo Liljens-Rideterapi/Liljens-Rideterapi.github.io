@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-box {
+    height: 125px;
+    background-color: var(--bg-blue);
+}
+
+.page-top-section {
+    margin-top: 0;
+}
+
+.page-top-section {
+    background-color: var(--bg-white);
+}
+
+.about-us {
+    margin: 0 auto;
+    margin-top: 0;
+    width: 70%;
+}
+
+.about-us-img {
+    max-width: 600px;
+    float: left;
+    border: 2px solid var(--textcolordark);
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.about-us h1 {
+    text-align: center;
+    align-items: center;
+    font-size: 60px;
+    margin-bottom:60px;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+}
+
+.about-us-text {
+    color: black;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 100%;
+}
+
+.about-us-text h2 {
+    font-size: 42px;
+}
+
+.about-us-text p {
+    font-size: 16px;
+}
+
+.img-roll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 60px 0 60px;
+    background-color: var(--bg-white);
+}
+
+.img-roll .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-roll .box .imgrow{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.img-roll .box .imgrow img{
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid var(--text-color);
+}
+
+.img-roll p {
+    max-width: 50%;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-bottom-content {
+    background-color: var(--bg-blue);
+}
+
+.map {
+  display: flex;
+  margin-left: auto;
+  background-color: var(--bg-blue);
+  margin-right: auto;
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.contact-us p {
+  font-size: 1.2rem;
+}
+
+.contact-us-form {
+    background: var(--bg-blue);
+    padding: 50px 100px;
+    border-top: 10px solid var(--contact-form-outline);
+  }
+
+.contact-us {
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    text-align: center;
+    color: black;
+}
+
+.contact-us h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.contact-us p {
+    margin-top: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+label, input, textarea {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 24pt;
+    font-family: "Spartan";
+}
+  
+input {
+    margin-bottom: 24pt;
+}
+  
+h3 {
+    font-weight: normal;
+    font-size: 10pt;
+    line-height: 24pt;
+    font-style: italic;
+    margin: 0 0 0.5em 0;
+}
+  
+span {
+    font-size: 8pt;
+}
+  
+em {
+    color: var(--contact-form-outline);
+    font-weight: bold;
+}
+  
+input, textarea {
+    border: none;
+    border: 1px solid var(--input-outline);
+    border-radius: 2px;
+    background: var(--bg-white);
+    padding-left: 5px;
+    outline: none;
+}
+  
+input:focus, textarea:focus {
+    border: 1px solid var(--input-outline-focus);
+}
+  
+textarea {
+    resize: none;
+}
+
+button {
+    display: block;
+    float: right;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background: var(--contact-form-outline);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s all ease-in-out;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background: inherit;
+    color: #7e98be;
+    border-bottom: 2px solid var(--contact-form-outline);
+}
+  
+::selection {
+    background: #aabfdd;
+}
+  
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    border: 1px solid var(--input-outline-focus);
+    -webkit-text-fill-color: var(--text-color);
+    -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.ruler {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width:1250px) 
+{
+    .about-us img {
+        max-width: 100%;
+    }
+    
+    .img-roll p {
+        max-width: 75%;
+        font-size: 1.2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

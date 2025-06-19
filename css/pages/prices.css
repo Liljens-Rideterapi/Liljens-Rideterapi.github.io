@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.top-box {
+    height: 125px;
+    background-color: var(--bg-blue);
+}
+
+.page-top-section {
+    background-color: var(--bg-white);
+}
+
+.prices-heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.prices-heading h3 {
+    font-size: 2.4rem;
+    color: black;
+    font-weight: 600;
+}
+
+.prices-heading p {
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+.price-box-roll {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.price-box {
+    display: inline-block;
+    width: 500px;
+    height: 240px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 60px 11px;
+    background-color:var(--price-box-color);
+}
+
+.price-box p {
+    font-size: 1.2rem;
+}
+
+.page-bottom-section {
+    background-color: var(--bg-white);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 0 20px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid var(--bg-blue);
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+body span{
+    background-color: var(--bg-blue);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+.bottom-box {
+    background-color: var(--bg-blue);
+    height: 50px;
+}
+
+.ruler {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width:1750px) {
+    .blog-box {
+        width: 300px;
+    }
+
+    .price-box-roll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 60px 0 60px;
+        margin-top: 30px;
+    }
+    
+    .price-box {
+        display: inline-block;
+        width: 300px;
+        height: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        padding: 60px 11px;
+        background-color:var(--price-box-color);
+    }
+
+    .price-box h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .price-box p {
+        font-size: 1.0rem;
+        top: 0;
+    }
+
+}
+@media(max-width:1100px) {
+    .blog-box {
+        width: 70%;
+    }
+}
+@media(max-width:550px) {
+    .blog-box {
+        margin: 20px 10px;
+        width: 100%;
+    }
+    #blog {
+        padding: 20px;
+    }
+}

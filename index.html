@@ -4,9 +4,249 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
     <title>Liljens Rideterapi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/pages/index.css">
+	<link rel="icon" href="images/logo.webp">
+
+    <!-- Import font for fa-icons in the footer -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Google material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-    <h1>DA: Siden er midlertidigt nede grundet vedligeholdelse prøv igen senere.<h1>
-    <hr>
-    <h1>EN: The site is temporarily down for maintenance. Please try again later.</h1>
-</body>
+    <body>
+        <!-- This is the navbar, should always be 1:1 with other pages. -->
+        <header id="navbar">   
+            <a href="index.html">
+                <img src="images/logo.webp" class="logo-img">
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <!-- ALWAYS KEEP <NAV> AFTER THIS LINE -->
+                <nav>
+                    <ul>
+                        <li><a href="about_us.html">Om Os</a></li>
+                        <li><a href="readmore.html">Læs Mere</a></li>
+                        <li><a href="prices.html">Priser</a></li>
+                        <li><a href="about_us.html#contact">Kontakt</a></li>
+                        <li><a href="gallery.html">Galleri</a></li>
+                    </ul>
+                </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+
+        <div class="vidbox">
+            <h1>Velkommen til<br>Liljens Rideterapi</h1>
+            <video class="video-bg" autoplay muted loop playsinline>
+                <source src="videos/index.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- A little hackish -->
+        <div class="container">
+            <a href="https://g.co/kgs/REGqT9f" class="clickable-box" target="_blank">
+            <div class="box">
+                <h1>Sandra</h1>
+                <div class="review-stars">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                </div>
+                <p style="font-size: 0.877rem">Jeanette er et fantastisk menneske, med god intuition og virkelig dygtig til sit job. Hun er 100% nærværende, og vil altid det bedste for andre. Hun er selv en dygtig rytter, med god fornemmelse for hesten.<br>
+                Hun kan helt sikkert hjælpe dig også <span class="material-icons" style="color:#f36a7e">favorite</span>
+                </p>
+            </div>
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=100095367817669&sk=reviews" class="clickable-box" target="_blank">
+            <div class="box">
+                <h1>Sine</h1>
+                <div class="review-recommendation">
+                    <span class="material-icons">favorite</span>
+                </div>
+                <p style="font-size: 0.9rem">Fantastisk sted, i fantastiske omgivelser.<br>
+                Her er der virkelig grobund for udvikling, under Jeanettes kyndige og omsorgsfulde vinger.<br>
+                Her er der tid, tillid og tryghed.<br>
+                Tak for det
+                </p>
+            </div>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100095367817669&sk=reviews" class="clickable-box" target="_blank">
+            <div class="box">
+                <h1>Ane Katrine</h1>
+                <div class="review-recommendation">
+                    <span class="material-icons">favorite</span>
+                </div>
+                <p style="font-size: 0.7rem">
+                Vores datter har gennem det sidste år kæmpet med skolevægring og at finde ro i at have fået diagnoserne ADHD og autisme. Hun har med hjælp fra Jeanette og hestene udviklet sig helt vildt. Arbejdet med hestene og Jeanettes rolige, anerkendende og blide tilgang har været med til at give hende troen på sig selv igen og har gjort hende i stand til at finde ro igen. Jeg vil give Jeanette og hestene mine varmeste anbefalinger <span class="material-icons" style="color:#f36a7e">favorite</span>
+                </p>
+            </div>
+            </a>
+        </div>
+
+        <div class="introduction">
+            <div class="content">
+                <div class="ruler"><span></span></div>
+                <h1>Livsglæde & Selvværd</h1>
+                <p>
+                    Vi lever i en meget udfordrende verden i dag med megen påvirkning fra gode og mindre gode sider,
+                    som nemt kan komme til at udfordre os så meget, at vi mister troen på vores eget værd og formåen.
+                    Vi mister også ofte den indre ro, som ellers gør at vi har større styrke til at bevare vores selvværd.
+                    Den kan genfindes i samarbejdet med hesten - læs mere under hvad er det hesten kan nedenfor.
+                    Jeg hjælper via hesten i helt rolige omgivelser, hvor vi kun er dig, f.eks. som forælder, dit barn, hesten og jeg.
+                </p>
+                <div class="intro-img-container">
+                    <img src="images/about_us/about_me.webp" class="intro-img" alt="">
+                </div>
+                <div class="top-wave-index">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="midpage">
+            <div class="wrapper">
+                <img class="img-left" src="images/index/about_horse_left.webp" alt="">
+                <div class="text-box-left">
+                    <h2>Hvad er det hesten kan?</h2>
+                    <p> 
+                        Hestene er det fælles tredje og har en beroligende effekt, der 
+                        åbner op for kropsbevidsthed, nærvær og selvindsigt.
+                        Det er et samarbejde, hvor vi finder roen, tryghed og sejrene i 
+                        samarbejdet omkring hesten. Vi arbejder med hesten fra jorden og 
+                        ved ridning, hvis det ønskes. Vi taler om hestens signaler og respons, 
+                        og herudfra lærer vi også noget om vores egne reaktioner / adfærdsmønstre. 
+                        Når man er hårdt presset, lukker kroppen ofte ned, således at man ikke mærker sin krop.
+                        Ved ridning, såmænd allerede bare ved skridt, vil man komme tilbage i kontakt med kroppen igen
+                        ved hjælp af hestens bevægelse og kropsvarme.
+                    </p>
+                </div>
+                <img class="img-right" src="images/index/about_horse_right.webp" alt="">
+                <div class="text-box-right">
+                    <h2>Hestens forståelse</h2>
+                    <p>
+                        Hesten har med sin rolige, afbalancerede natur en unik evne til 
+                        at sænke stressniveauet hos mennesker. Hesten er rummelig, 
+                        tålmodig og dømmer ikke, og derfor bruger jeg disse karaktertræk 
+                        til at give unge gode oplevelser der øger livsglæde og selvværd.
+                        Hesten har samme nervesystem som os, og den spejler vores følelser. Derfra kan man arbejde med følelser.
+                        <br><br>
+                        De unge oplever fælleskab og ansvar når de arbejder med hesten.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="img-roll">
+            <h1 style="text-align: center; font-size: 42px;">Om rideterapi</h1>
+            <div class="mainImgBox">
+                <div class="imgrow">
+                    <img src="images/index/about_therapy_left.webp">
+                </div>
+
+                <div class="imgrow">
+                    <img src="images/index/about_therapy_center.webp">
+                </div>
+
+                <div class="imgrow">
+                    <img src="images/index/about_therapy_right.webp">
+                </div>
+            </div>
+        </div>
+
+        <div class="endpage">
+            <div class="content">
+                <p>
+                    Jeg hjælper via hesten i helt rolige omgivelser, hvor vi kun er dig  f.eks. som forælder, 
+                    dit barn, hesten og jeg. Vi udarbejder et mål, og en plan for vejen dertil, og så bevæger 
+                    vi os frem i det tempo, som passer ud fra de  udfordringer der måtte være. 
+                    Vi rider på helt private trafikfrie ridestier i skøn natur samt indhegnet ridebane.
+                    Her oplever man sig selv lykkes, hvor man ikke troede man kunne.
+                    Der kan også etableres samarbejde med evt.
+                    Fysioterapeut / ergoterapeut / psykolog, skolelærer, hvis man er tilknyttet 
+                    en sådan, som kan bidrage med  øvelser der kan laves i samarbejdet med hesten
+                </p>
+            </div>
+            <div class="ruler"><span></span></div>
+            <div id="learnmore" class="learn-more">
+                <img src="images/index/learn_more.webp" class="learn-more-img" alt="">
+                <div class="learn-more-text">
+                    <h2>Vil du vide mere?</h2>
+                    <p>
+                        Du kan læse mere om os samt hvor vi befinder os <a href="about_us.html">her</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li><a> Jeanette Bjørnager Jensen</a></li>
+                            <li><a style="font-size:14px">Gl. Kongevej 43, 9330 Dronninglund</a></li>
+                            <li><a>(+45) 42220715</a></li>
+                            <li><a>liljensrideterapi@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Sider</h4>
+                        <ul>
+                            <li><a href="index.html">Forside</a></li>
+                            <li><a href="about_us.html">Om os</a></li>
+                            <li><a href="readmore.html">Læs mere</a></li>
+                            <li><a href="prices.html">Priser</a></li>
+                            <li><a href="about_us.html#contact">Kontakt</a></li>
+                            <li><a href="gallery.html">Galleri</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quicklinks</h4>
+                        <ul>
+                            <li><a target="_blank" rel="noreferrer noopener" href="#">Forløbskatalog</a></li>
+                            <li><a target="_blank" rel="noreferrer noopener" href="#">GDPR</a></li>
+                            <li><a target="_blank" rel="noreferrer noopener" href="#">FAQ</a></li>
+                            <li><a target="_blank" rel="noreferrer noopener" href="#">Privatlivspolitik</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Se mere</h4>
+                        <div class="social-links">
+                            <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/profile.php?id=100095367817669"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/@liljensrideterapi/videos"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- <script src="js/index.js"></script> -->
+        <script type="text/javascript">
+            navbar = document.getElementById("navbar");
+            navbar.classList.add('nav-background-light');
+                window.addEventListener("scroll", function() {
+                    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollTop < 400) {
+                        navbar.style.top = "0";
+                    } else {
+                        navbar.style.top = "-150px";
+                    }
+                })
+        </script>
+
+    </body>
+</html>

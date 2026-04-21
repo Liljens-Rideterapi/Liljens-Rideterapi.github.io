@@ -1,0 +1,267 @@
+/* index.css
+ *
+ * INDEX STYLE SHEET
+ * This file contains all styling unique to index.html.
+ *
+ * author: nikobk
+ * date: apr 20 2026
+ */
+
+
+/* VIDEO BOX */
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    min-height: 75vh;
+    color: white;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;           /* ensure it is above video */
+    font-size: 2rem;
+    text-align: center;
+    color: var(--background-color);
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+/* REVIEW BOXES */
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: var(--background-color);
+}
+
+/* card */
+.review-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-card article {
+    width: 370px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* hover */
+.review-card:hover article {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+/* content */
+.review-card h3 {
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.review-stars {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.review-like {
+    color: #f36a7e;
+    margin-bottom: 10px;
+}
+
+/* Mobile view */
+@media (max-width: 900px) {
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* INTRODUCTION '*/
+.introduction {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 30px 20px 40px; /* top right/left bottom */
+}
+
+/* title */
+.introduction h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* text */
+.introduction p {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* image */
+.introduction img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ABOUT THE HORSES */
+.about-horse {
+    background: var(--foreground-color);
+    padding: 40px 20px;
+}
+
+/* each row */
+.about-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+/* flip layout */
+.about-block.reverse {
+    flex-direction: row-reverse;
+}
+
+/* image */
+.about-block img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+/* text */
+.about-block .text {
+    flex: 1;
+}
+
+.about-block h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-block p {
+    line-height: 1.6;
+}
+
+/* Mobile view */
+@media (max-width: 800px) {
+    .about-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-block.reverse {
+        flex-direction: column;
+    }
+}
+
+/* ABOUT THERAPY & CTA */
+.therapy {
+    background: var(--background-color);
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.therapy h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.therapy-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.therapy-images img {
+    width: 30%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+.therapy p {
+    max-width: 980px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+
+    background: var(--foreground-color);
+}
+
+.cta img {
+    width: 550px;
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.cta-text {
+    flex: 1;
+}
+
+.cta-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Mobile view */
+@media (max-width: 800px) {
+    .therapy-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .therapy-images img {
+        width: 80%;
+    }
+
+    .cta {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,24 +1,86 @@
+/* style.css
+ *
+ * SITE-WIDE BASE STYLE SHEET
+ * This file contains all styling shared between all html pages.
+ *
+ * author: nikobk
+ * date: apr 20 2026
+ */
+
 :root {
-    --vidbox-color: rgba(0, 0, 0, 0);
-    --bg-blue: rgb(222, 236, 255);
-    --bg-blue-bright: rgb(244, 258, 277);
-    --bg-white: white;
-    --text-color: #2d2e33;
-    --wave-color-light: white;
-    --wave-color-blue: rgb(222, 236, 255);
-    --img-outline-color: #2d2e33;
-    --contact-form-outline: #7e98be;
-    --input-outline: rgba(0, 0, 0, 0.1);
-    --input-outline-focus: #7bd4b1;
-    --blog-text-color: rgb(92, 116, 151);
-    --price-box-color: #ececec;
-    --header-color: rgba(0, 0, 0, 0.15);
-    --blog-box-color: white;
-    --blog-box-outline: #ececec;
-    --blog-title-color: #272727;
+    --text-color: #2d2e33; /* dark gray/bluish */
+    --accent: #2d6cdf; /* blue */
+    --background-color: #eaf4ff; /* soft blue */
+    --foreground-color: #f8fbff; /* light blue, almost white */
+    --wave-color: #eaf4ff; /* soft blue */
+    --backdrop-color: #333; /* dark gray */
+}
+
+/* make page contents stick to the edge of the screen
+ * (browser pads from the left, top and bottom by default)
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background: var(--foreground-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HORIZONTAL DIVIDER
+ * This is used on the index page and is available to all other pages.
+ */
+.divider {
+    width: 100%;
+    padding: 40px 0; /* replaces margin */
+    display: flex;
+    justify-content: center;
+}
+
+.divider::after {
+    content: "";
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(0,0,0,0.2),
+                                transparent
+    );
+}
+
+/* blue background */
+.divider--blue {
+    background: var(--background-color);
 }
 
 /* SVG wave shape styles */
+.top-wave {
+    margin-bottom: -60px;
+    position: relative;
+    z-index: 1;
+}
+
+.bottom-wave {
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+}
 
 .top-wave-index {
     bottom: 0;
@@ -32,7 +94,7 @@
 .top-wave-index svg {
     position: relative;
     display: block;
-    width: calc(117% + 1.3px);
+    width: 100%;
     height: 135px;
 }
 
@@ -40,23 +102,15 @@
     fill: white;
 }
 
-.top-wave {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
 .top-wave svg {
     position: relative;
     display: block;
-    width: calc(117% + 1.3px);
+    width: 100%;
     height: 135px;
 }
 
 .top-wave .shape-fill {
-    fill: var(--bg-blue);
+    fill: var(--wave-color);
 }
 
 .bottom-wave {
@@ -71,11 +125,11 @@
 .bottom-wave svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: 100%;
     height: 130px;
     transform: rotateY(180deg);
 }
 
 .bottom-wave .shape-fill {
-    fill: var(--wave-color-blue);
+    fill: var(--wave-color);
 }

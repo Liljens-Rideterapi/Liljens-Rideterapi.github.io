@@ -1,157 +1,169 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>Liljens Rideterapi</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/pages/prices.css">
-	<link rel="icon" href="images/logo.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <!-- Import font for fa-icons in the footer -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Liljens Rideterapi</title>
 
-<body>
-    <header id="navbar">
-        <a href="index.html">
-            <img src="images/logo.webp" class="logo-img">
-        </a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <!-- ALWAYS KEEP <NAV> AFTER THIS LINE -->
-        <nav>
-            <ul>
-                <li><a href="about_us.html">Om Os</a></li>
-                <li><a href="readmore.html">Læs Mere</a></li>
-                <li><a href="prices.html">Priser</a></li>
-                <li><a href="about_us.html#contact">Kontakt</a></li>
-                <li><a href="gallery.html">Galleri</a></li>
-            </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
-    </header>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/prices.css">
+        <link rel="stylesheet" href="css/footer.css">
 
-    <div class="top-box"><span></span></div>
-    <div class="page-top-section">
-        <div class="top-wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </div>
+        <!-- Layout -->
+        <link rel="icon" href="images/logo.webp">
 
-    <div class="prices-heading">
-        <h3>Priser</h3>
-        <p>Én session á 60 min - Kr. 595,00</p>
-        <p>Første session á 60 min - gratis</p>
-        <p><i>De ønskede antal sesioner aftales og betales samlet efter første prøvetime.</i></p>
-    </div>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
 
-    <div class="price-box-roll">
-        <div class="price-box">
-            <h1>8 sessioner á 60 min</h1>
-            <p>Kr. 4.495,00</p>
-        </div>
+        <!-- This is the navbar, should always be 1:1 with other pages. -->
+        <header id="navbar">
+            <a href="index.html">
+                <img src="images/logo.webp" class="logo-img">
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <!-- ALWAYS KEEP <NAV> AFTER THIS LINE -->
+                <nav>
+                    <ul>
+                        <li><a href="about.html">Om Os</a></li>
+                        <li><a href="more.html">Læs Mere</a></li>
+                        <li><a href="prices.html">Priser</a></li>
+                        <li><a href="about.html#contact">Kontakt</a></li>
+                        <li><a href="gallery.html">Galleri</a></li>
+                    </ul>
+                </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
 
-        <div class="price-box">
-            <h1>12 sessioner á 60 min</h1>
-            <p>Kr. 6.495,00</p>
-        </div>
+        <main>
 
-        <div class="price-box">
-            <h1>16 sessioner á 60 min</h1>
-            <p>Kr. 8.195,00</p>
-        </div>
-    </div>
-    <div class="ruler"><span></span></div>
-    <div class="prices-heading">
-        <h3>Tilskud</h3>
-        <p>
-            Der kan søges tilskud til ovenstående priser gennem <b>Borger.dk</b>.
-        </p>
-        <p>
-            Kommunen kan dække den merudgift, som udgør forskellen på almindelig ridning og terapiridning/handicapridning.
-        </p>
-    </div>
-    <div class="container">
-        <div>
-            <a target="_blank" rel="noreferrer noopener" href="https://www.borger.dk/vaelg-kommune?actionPageId=065ca8f9-a1f5-4946-ada7-12e163f568df&selfserviceId=bfaad6be-d04f-4653-9c06-df130618ade4" target="_self">
-                <button type="button"><span></span>SØG TILSKUD HER</button>
-                </atarget="_blank">
-        </div>
-    </div>
+            <!-- PRICES INTRO -->
+            <section class="prices-intro">
+                <h1>Priser</h1>
 
-    <div class="page-bottom-section">
-        <div class="bottom-wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-            </svg>
-        </div>
-    </div>
-    <div class="bottom-box"><span></span></div>
+                <p>Én session á 60 min - <strong>Kr. 595,00</strong></p>
+                <p>Første session á 60 min - <strong>Gratis</strong></p>
+                <p class="note">Læs mere om terapi forløbet <a href="index.html#therapy">her</a>.</p>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-row">
+                <p class="note">
+                    De ønskede antal sessioner aftales og betales samlet efter første session.
+                </p>
+            </section>
+
+            <!-- PRICE PACKAGES -->
+            <section class="price-packages">
+
+                <div class="price-card">
+                    <h3>8 sessioner</h3>
+                    <p>Kr. 4.500,00</p>
+                </div>
+
+                <div class="price-card">
+                    <h3>12 sessioner</h3>
+                    <p>Kr. 6.500,00</p>
+                </div>
+
+                <div class="price-card">
+                    <h3>16 sessioner</h3>
+                    <p>Kr. 8.200,00</p>
+                </div>
+
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- SUBSIDY -->
+            <section class="subsidy">
+
+                <h2>Tilskud</h2>
+
+                <p>
+                    Der kan søges tilskud gennem <strong>Borger.dk</strong>.
+                </p>
+
+                <p>
+                    Kommunen kan dække merudgiften mellem almindelig ridning og terapiridning.
+                </p>
+
+                <a href="https://www.borger.dk/vaelg-kommune?actionPageId=065ca8f9-a1f5-4946-ada7-12e163f568df&selfserviceId=bfaad6be-d04f-4653-9c06-df130618ade4" target="_blank" class="cta-button">
+                    Søg tilskud her
+                </a>
+
+            </section>
+
+            <section class="feenote">
+                <p><i>
+                    Du kan i mange tilfælde få tilskud til rideterapi, hvis dit barn har en diagnose eller er i svær mistrivsel. Mulighederne afhænger dog af, om der er tale om en fysisk eller psykisk problemstilling, og hvilken paragraf i lovgivningen man søger under.<br><br>
+
+                    Der kan findes tilskud via serviceloven (Merudgifter) hvis barnet har en betydelig og varigt nedsat funktionsevne eller en indgribende kronisk lidelse, så kan man søge om dækning af merudgifter hos kommunen.<br><br>
+
+                    Barnets Lov § 86: Du kan søge om at få dækket prisforskellen mellem almindelig
+                    ridning og den dyrere rideterapi/handicapridning. Det kræver typisk en lægefaglig dokumentation for
+                    barnets udfordringer, og at ridningen vurderes som en nødvendig merudgift direkte relateret til
+                    funktionsnedsættelsen.<br><br>
+
+                    Hvis barnet er i mistrivsel uden en formel diagnose endnu, kan du starte med at kontakte kommunens
+                    familieafdeling eller <a href="https://www.skole-foraeldre.dk/artikel/p%C3%A6dagogisk-psykologisk-r%C3%A5dgivning-ppr" target="_blank">PPR</a> for at høre om støttemuligheder via Skolebørn.
+                </i></p>
+            </section>
+
+            <div class="divider"></div>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
                 <div class="footer-col">
                     <h4>Kontakt</h4>
                     <ul>
-                        <li><a> Jeanette Bjørnager Jensen</a></li>
-                        <li><a style="font-size:14px">Gl. Kongevej 43, 9330 Dronninglund</a></li>
-                        <li><a>(+45) 42220715</a></li>
-                        <li><a>liljensrideterapi@gmail.com</a></li>
+                        <li>Jeanette Bjørnager Jensen</li>
+                        <li>Gl. Kongevej 43, 9330 Dronninglund</li>
+                        <li>(+45) 42220715</li>
+                        <li>liljensrideterapi@gmail.com</li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Sider</h4>
                     <ul>
-                        <li><a href="index.html">Forside</a></li>
-                        <li><a href="about_us.html">Om os</a></li>
-                        <li><a href="readmore.html">Læs mere</a></li>
-                        <li><a href="prices.html">Priser</a></li>
-                        <li><a href="about_us.html#contact">Kontakt</a></li>
-                        <li><a href="gallery.html">Galleri</a></li>
+                       <li><a href="/index.html">Forside</a></li>
+                        <li><a href="/about.html">Om os</a></li>
+                        <li><a href="/more.html">Læs mere</a></li>
+                        <li><a href="/prices.html">Priser</a></li>
+                        <li><a href="/about.html#contact">Kontakt</a></li>
+                        <li><a href="/gallery.html">Galleri</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Quicklinks</h4>
                     <ul>
-                        <li><a target="_blank" rel="noreferrer noopener" href="#">Forløbskatalog</a></li>
-                        <li><a target="_blank" rel="noreferrer noopener" href="#">GDPR</a></li>
-                        <li><a target="_blank" rel="noreferrer noopener" href="#">FAQ</a></li>
-                        <li><a target="_blank" rel="noreferrer noopener" href="#">Privatlivspolitik</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privatlivspolitik</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Se mere</h4>
                     <div class="social-links">
-                        <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/profile.php?id=100095367817669"><i class="fab fa-facebook-f"></i></a>
-                        <a target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/@liljensrideterapi/videos"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100095367817669" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@liljensrideterapi/videos" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
 
-    <!-- <script src="js/index.js"></script> -->
-    <script type="text/javascript">
-        navbar = document.getElementById("navbar");
-        navbar.classList.add('nav-background-dark');
-        window.addEventListener("scroll", function () {
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop < 200) {
-                navbar.style.top = "0";
-            } else {
-                navbar.style.top = "-150px";
-            }
-        })
-    </script>
-</body>
+            </div>
+
+        </footer>
+
+        <script src="js/navbarToggle.js"></script>
+
+    </body>
 </html>

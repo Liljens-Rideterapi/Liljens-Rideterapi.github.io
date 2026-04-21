@@ -1,7 +1,7 @@
 /* navigation styles start here */
 
 header {
-    background: var(--header-color);
+    background: rgba(0, 0, 0, 0.15);
     text-align: center;
     position: fixed;
     z-index: 999;
@@ -49,14 +49,15 @@ header {
 
 nav {
     position: absolute;
-    text-align: left;
     top: 100%;
     left: 0;
-    background: var(--header-color);
+
     width: 100%;
-    transform: scale(1, 0);
+    background: rgba(0, 0, 0, 0.45);
+
+    transform: scaleY(0);
     transform-origin: top;
-    transition: transform 400ms ease-in-out;
+    transition: transform 0.3s ease;
 }
 
 nav ul {
